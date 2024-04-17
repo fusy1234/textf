@@ -29,13 +29,13 @@ bool anagram(string a,string b){
 }
 bool palindrom(string w){
     for(int i=0;i<w.length()/2;i++){
-        if(w[i]==w[w.length()-1-i]){
+        if(w[i]!=w[w.length()-1-i]){
 
-            return true;
+            return false;
         }
 
 
-        return false;
+        return true;
     }
 }
 
